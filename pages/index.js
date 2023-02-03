@@ -8,6 +8,10 @@ import {
 } from 'react-icons/ai';
 import Image from "next/image";
 import brianDP from "../public/BLdp.jpeg";
+import Spotter from "../public/homepage.png";
+import Restaurant from "../public/restauranthome.png";
+import Recipe from "../public/recipehome.png";
+import Roulette from "../public/roulettehome.png";
 import { useState } from 'react';
 
 
@@ -26,7 +30,7 @@ export default function Home() {
 
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between">
+          <nav className="py-10 mb-12 flex justify-between sticky top-0">
             <h1 className="text-xl">developedbybrian</h1>
             <ul className="flex items-center">
               <li>
@@ -65,10 +69,10 @@ export default function Home() {
               Brian Lee
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl">
-              Software Developer.
+              Software Developer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto">
-              Welcome to portfolio.
+              Welcome to my portfolio, feel free to connect with me!
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
@@ -86,51 +90,56 @@ export default function Home() {
           <div className="lg:flex gap-10">
             <h3 className="text-3xl py-1">About</h3>
             <p className="text-md py-2 leading-8 text-gray-800">
-              Welcome to the beginning of my development journey!
-              I completed my Software Engineering Immersive Bootcamp from 
+              Welcome to the beginning of my coding journey!
+              I started by completing my Software Engineering Immersive Bootcamp from 
               <span className="text-teal-500"> General Assembly </span>
-              and now I am looking to work as a <span className="text-teal-500"> software devloper</span>. 
+              and now I am continuing to build on my foundation as a <span className="text-teal-500"> software devloper</span>.
+              Check out my <span className="text-teal-500">projects</span>: 
             </p>
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-              <Image width={100} height={100} alt="..."/>
-              <h3 className="text-lg font-medium py-8 pb-2">Beautiful Designs1</h3>
-              <p className="py-2">Enter paragraph here!</p>
-              <h4 className="text-teal-600 py-4">design tools!</h4>
-              <p className="text-gray-800 py-1">photoshop</p>
-              <p className="text-gray-800 py-1">illustrator</p>
-              <p className="text-gray-800 py-1">figma</p>
+              <Image src={Spotter} alt="..."/>
+              <a target="_blank" rel="noreferrer" href="https://brians-spotter.herokuapp.com" className="text-lg font-medium py-8 pb-2">Spotter</a>
+              <p className="py-2">Search and share your favorite songs!</p>
+              <h4 className="text-teal-600 py-4">tech tools!</h4>
+              <p className="text-gray-800 py-1">MongoDB, Express.JS, React.JS, Node.JS</p>
+              <p className="text-gray-800 py-1">HTML, CSS</p>
+              <p className="text-gray-800 py-1">Deezer API</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-              <Image width={100} height={100} alt="..."/>
-              <h3 className="text-lg font-medium py-8 pb-2">Beautiful Designs2</h3>
-              <p className="py-2">Enter paragraph here!</p>
-              <h4 className="text-teal-600 py-4">design tools!</h4>
-              <p className="text-gray-800 py-1">photoshop</p>
-              <p className="text-gray-800 py-1">illustrator</p>
-              <p className="text-gray-800 py-1">figma</p>
+              <Image src={Restaurant} alt="..."/>
+              <h3 className="text-lg font-medium py-8 pb-2">Restaurant Reviewer</h3>
+              <p className="py-2">Discover new local restaurants!</p>
+              <h4 className="text-teal-600 py-4">tech tools!</h4>
+              <p className="text-gray-800 py-1">Python-Django, PostgreSQL</p>
+              <p className="text-gray-800 py-1">HTML, CSS</p>
+              <p className="text-gray-800 py-1">AWS S3</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-              <Image width={100} height={100} alt="..."/>
-              <h3 className="text-lg font-medium py-8 pb-2">Beautiful Designs3</h3>
-              <p className="py-2">Enter paragraph here!</p>
-              <h4 className="text-teal-600 py-4">design tools!</h4>
-              <p className="text-gray-800 py-1">photoshop</p>
-              <p className="text-gray-800 py-1">illustrator</p>
-              <p className="text-gray-800 py-1">figma</p>
+            <Image src={Recipe} alt="..."/>
+              <h3 className="text-lg font-medium py-8 pb-2">Drink Book</h3>
+              <p className="py-2">Create new drink recipes!</p>
+              <h4 className="text-teal-600 py-4">tech tools!</h4>
+              <p className="text-gray-800 py-1">MongoDB, Express.JS, Node.JS</p>
+              <p className="text-gray-800 py-1">HTML, CSS</p>
+              <p className="text-gray-800 py-1">Google OAuth 2.0</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+            <Image src={Roulette} alt="..."/>
+              <h3 className="text-lg font-medium py-8 pb-2">Ghoulette</h3>
+              <p className="py-2">Test your luck in Spooky Roulette!</p>
+              <h4 className="text-teal-600 py-4">tech tools!</h4>
+              <p className="text-gray-800 py-1">Javascript, HTML, CSS</p>
             </div>
           </div>
         </section>
         <section>
           <div>
-          <h3 className="text-3xl py-1">Portfolio</h3>
+          <h3 className="text-3xl py-1">Thanks!</h3>
           <p className="text-md py-2 leading-8 text-gray-800">
-              Welcome to the beginning of my development journey!
-              I completed my Software Engineering Immersive Bootcamp from 
-              <span className="text-teal-500"> General Assembly </span>
-              and now I am looking to work as a <span className="text-teal-500"> software devloper</span>. 
-            </p>
+            More content coming soon..
+          </p>
           </div>
         </section>
       </main>

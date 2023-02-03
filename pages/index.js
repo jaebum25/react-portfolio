@@ -48,7 +48,7 @@ export default function Home() {
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" 
                   href="https://docs.google.com/document/d/1Mk9GGSmF_Sds0Mbg9ojErhdHZ_dfBW36p4BevMsO-hA/edit?usp=sharing"
                   target="_blank"
-                  
+                  rel="noreferrer"
                 >
                   Resume
                 </a>
@@ -57,7 +57,7 @@ export default function Home() {
           </nav>
           <div className="flex flex-wrap justify-center">
             <div className="sm:w-4/12 px-4">
-              <Image src={brianDP} className="shadow-lg rounded-full max-w-full h-auto align-middle border-none" />
+              <Image src={brianDP} alt="..." className="shadow-lg rounded-full max-w-full h-auto align-middle border-none" />
             </div>
           </div>
           <div className="text-center p-10">
@@ -72,10 +72,10 @@ export default function Home() {
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-            <a href="https://www.linkedin.com/in/brianjaebum/" target="_blank">
+            <a href="https://www.linkedin.com/in/brianjaebum/" target="_blank" rel="noreferrer">
               <AiFillLinkedin />
             </a>
-            <a href="https://github.com/jaebum25" target="_blank">
+            <a href="https://github.com/jaebum25" target="_blank" rel="noreferrer">
               <AiFillGithub />
             </a>
             <AiFillYoutube />
@@ -94,7 +94,7 @@ export default function Home() {
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-              <Image width={100} height={100} />
+              <Image width={100} height={100} alt="..."/>
               <h3 className="text-lg font-medium py-8 pb-2">Beautiful Designs1</h3>
               <p className="py-2">Enter paragraph here!</p>
               <h4 className="text-teal-600 py-4">design tools!</h4>
@@ -103,7 +103,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">figma</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-              <Image width={100} height={100} />
+              <Image width={100} height={100} alt="..."/>
               <h3 className="text-lg font-medium py-8 pb-2">Beautiful Designs2</h3>
               <p className="py-2">Enter paragraph here!</p>
               <h4 className="text-teal-600 py-4">design tools!</h4>
@@ -112,7 +112,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">figma</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-              <Image width={100} height={100} />
+              <Image width={100} height={100} alt="..."/>
               <h3 className="text-lg font-medium py-8 pb-2">Beautiful Designs3</h3>
               <p className="py-2">Enter paragraph here!</p>
               <h4 className="text-teal-600 py-4">design tools!</h4>

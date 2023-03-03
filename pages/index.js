@@ -115,7 +115,7 @@ export default function Home() {
           <div className={min ? "flex gap-10" : "lg gap-10"}>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-600">
               <Image src={Spotter} alt="..."/>
-              <a target="_blank" rel="noreferrer" href="https://brians-spotter.herokuapp.com" className="text-lg font-medium py-8 pb-2">Spotter</a>
+              <a target="_blank" rel="noreferrer" href="https://brians-spotter.herokuapp.com" className="text-lg font-medium py-8 pb-2">Spotter `(Click me!)`</a>
               <p className="py-2">Search and share your favorite songs!</p>
               <h4 className="text-teal-600 py-4">tech tools!</h4>
               <p className="text-gray-800 py-1">MongoDB, Express.JS, React.JS, Node.JS</p>

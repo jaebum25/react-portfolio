@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { Inter } from '@next/font/google';
-import {BsFillMoonStarsFill, BsSunFill} from 'react-icons/bs';
+import {BsFillMoonStarsFill, BsSunFill, BsCloudMinus, BsCloudPlus } from 'react-icons/bs';
 import { 
   AiFillLinkedin, 
   AiFillYoutube, 
@@ -19,6 +19,8 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  const [min, setMin] = useState(true);
+
   return (
     <div className={darkMode ? 'dark' : ""}>
       <Head>
@@ -93,11 +95,24 @@ export default function Home() {
               Welcome to the beginning of my coding journey!
               I started by completing my Software Engineering Immersive Bootcamp from 
               <span className="text-teal-500"> General Assembly </span>
-              and now I am continuing to build on my foundation as a <span className="text-teal-500"> software devloper</span>.
-              Check out my <span className="text-teal-500">projects</span>: 
+              and now I am continuing to build on my foundation as a <span className="text-teal-500"> software developer</span>.
+              Toggle <span className="text-teal-500">projects: </span>
+              <button>
+                {min ?
+                <BsCloudPlus  
+                  onClick={() => setMin(!min)} 
+                  className="cursor-pointer text-2xl"
+                />
+                :
+                <BsCloudMinus
+                  onClick={() => setMin(!min)} 
+                  className="cursor-pointer text-2xl"
+                />
+                }
+              </button> 
             </p>
           </div>
-          <div className="lg:flex gap-10">
+          <div className={min ? "flex gap-10" : "lg gap-10"}>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-600">
               <Image src={Spotter} alt="..."/>
               <a target="_blank" rel="noreferrer" href="https://brians-spotter.herokuapp.com" className="text-lg font-medium py-8 pb-2">Spotter</a>
